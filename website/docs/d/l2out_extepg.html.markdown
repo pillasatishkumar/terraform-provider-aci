@@ -1,30 +1,30 @@
 ---
 layout: "aci"
-page_title: "ACI: aci_l2out_extepg
-sidebar_current: "docs-aci-data-source-l2out_extepg
+page_title: "ACI: aci_l2out_extepg"
+sidebar_current: "docs-aci-data-source-l2out_extepg"
 description: |-
   Data source for ACI L2-Out External EPG
 ---
 
-# aci_l2out_extepg
+# aci_l2out_extepg #
 
 Data source for ACI L2-Out External EPG
 
-## Example Usage
+## Example Usage ##
 
 ```hcl
-data "aci_l2out_extepg "example" {
+data "aci_l2out_extepg" "example" {
   l2_outside_dn  = "${aci_l2_outside.example.id}"
   name  = "example"
 }
 ```
 
-## Argument Reference
+## Argument Reference ##
 
 - `l2_outside_dn` - (Required) Distinguished name of parent L2-Outside object.
 - `name` - (Required) The name of the layer 2 external network instance profile. This name can be up to 64 alphanumeric characters. Note that you cannot change this name after the object has been saved.
 
-## Attribute Reference
+## Attribute Reference ##
 
 - `id` - Attribute id set to the Dn of the L2-Out External EPG.
 - `annotation` - (Optional) Annotation for object L2-Out External EPG.
